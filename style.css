@@ -247,3 +247,58 @@ footer.contact .btn {
 footer.contact .btn:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
+
+/* Media Queries */
+
+/* For tablets (min-width: 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack the navigation items */
+    }
+
+    .hero-section h2 {
+        font-size: 40px; /* Reduce font size */
+    }
+
+    .destination-card img {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    footer.contact input[type="email"],
+    footer.contact input[type="tel"] {
+        width: 100%; /* Full width for inputs */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px; /* Adjust padding for navbar */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack the menu items vertically */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .hero-section h2 {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .destination-card {
+        margin: 10px; /* Add margin to cards for spacing */
+    }
+
+    .destination-card img {
+        height: 120px; /* Adjust image height */
+    }
+
+    footer.contact h2 {
+        font-size: 28px; /* Reduce font size for footer heading */
+    }
+
+    footer.contact input[type="email"],
+    footer.contact input[type="tel"] {
+        width: 90%; /* Full width for inputs with padding */
+    }
+}
